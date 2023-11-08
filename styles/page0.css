@@ -1,0 +1,64 @@
+.select-option {
+  border: none;
+  width: 100%;
+  border-bottom: solid 1px black;
+}
+.button-calc {
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 0px;
+  padding: 0 15px;
+  cursor: pointer;
+  height: 21px;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-calc:hover {
+  box-shadow: 1px 1px black, 2px 2px black, 3px 3px black;
+  transform: translateX(3px);
+}
+
+.div-inputs {
+  padding: 10px;
+  text-align: center;
+}
+
+.container-img {
+  text-align: center;
+}
+.img-formula {
+  width: 150px;
+  height: auto;
+}
+
+.input-txt-1,
+.input-txt-2 {
+  display: block;
+  width: 50%;
+  height: 30px;
+  text-align: center;
+  margin: 20px auto;
+  border-radius: 0px;
+  border: solid 1px black;
+}
+
+.result {
+  padding: 10px;
+  text-align: center;
+  color: green;
+}
+
+@media only screen and (max-width: 930px) {
+  .input-txt-1,
+  .input-txt-2 {
+    display: block;
+    width: 90%;
+    height: 30px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 0px;
+    border: solid 1px black;
+  }
+}
