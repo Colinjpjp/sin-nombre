@@ -3,6 +3,7 @@ const inputTxt = document.querySelector(".input-txt-1");
 const inputTxt2 = document.querySelector(".input-txt-2");
 const buttonCalc = document.querySelector(".button-calc");
 const RESULT = document.querySelector(".result");
+const imgFormula = document.querySelector(".img-formula");
 
 function velocity(distance, time) {
   const result = distance / time;
@@ -35,18 +36,21 @@ function distance(velocity, time) {
   RESULT.innerHTML = `<p class="number">${result}m</p>`;
 }
 
-function changePlaceholder(input1, input2, select) {
+function changePlaceholder(input1, input2, select, img) {
   if (select === "Velocidad") {
     input1.setAttribute("placheholder", "Distancia: m");
     input2.setAttribute("placeholder", "Tiempo: s");
+    imgFormula.setAttribute("src", "/img/velocity.jpg");
   } else if (select === "Tiempo") {
     input1.setAttribute("placeholder", "Distancia: m");
     input2.setAttribute("placeholder", "Velocidad: m/s");
+    imgFormula.setAttribute("src", "/img/time.png");
   } else if (select === "Distancia") {
     input1.setAttribute("placeholder", "Velocidad: m/s");
     input2.setAttribute("placeholder", "Tiempo: s");
+    imgFormula.setAttribute("src", "/img/distance.png");
   } else {
-    console.error("value stranger");
+    console.error("valor desconocido");
   }
 }
 

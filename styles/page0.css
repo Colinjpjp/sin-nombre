@@ -2,6 +2,7 @@
   border: none;
   width: 100%;
   border-bottom: solid 1px black;
+  height: 30px;
 }
 .button-calc {
   color: black;
